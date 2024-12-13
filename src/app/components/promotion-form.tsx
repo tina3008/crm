@@ -4,7 +4,7 @@ import React from 'react';
 import { Form, Formik } from 'formik';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { createPromotion, getCompany } from '@/lib/api';
-import Button from '@/app/components/button';
+import Autton from '@/app/components/autton';
 import InputField from '@/app/components/input-field';
 import LogoUploader from '@/app/components/logo-uploader';
 
@@ -86,9 +86,9 @@ export default function PromotionForm({
           />
           <LogoUploader square label="Image" placeholder="Upload photo" />
         </div>
-        <Button type="submit" disabled={isPending}>
+        <Autton type="submit" disabled={isPending}>
           Add promotion
-        </Button>
+        </Autton>
       </Form>
     </Formik>
   );

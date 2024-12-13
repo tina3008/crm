@@ -9,7 +9,7 @@ import {
   getCategories,
   getCountries,
 } from '@/lib/api';
-import Button from '@/app/components/button';
+import Autton from '@/app/components/autton';
 import InputField from '@/app/components/input-field';
 import LogoUploader from '@/app/components/logo-uploader';
 import StatusLabel from '@/app/components/status-label';
@@ -139,9 +139,9 @@ export default function CompanyForm({ onSubmit }: CompanyFormProps) {
             />
           </div>
         </div>
-        <Button type="submit" disabled={isPending}>
+        <Autton type="submit" disabled={isPending}>
           Add company
-        </Button>
+        </Autton>
       </Form>
     </Formik>
   );
