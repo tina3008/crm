@@ -2,13 +2,13 @@
 
 import React from 'react';
 import { useRouter } from 'next/navigation';
-import Autton from '@/app/components/autton';
+import Button from '@/app/components/button';
 
 export default function AddCompanyButton() {
   const router = useRouter();
   return (
-    <Autton onClick={() => router.push('/companies/new', { scroll: false })}>
+    <Button onClick={() => router.push('/companies/new', { scroll: false })}>
       Add company
-    </Autton>
+    </Button>
   );
 }

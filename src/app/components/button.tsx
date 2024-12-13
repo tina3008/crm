@@ -8,7 +8,7 @@ export interface ButtonProps
   disabled?: boolean;
 }
 
-export default function Autton({ disabled, ...rest }: ButtonProps) {
+export default function Button({ disabled, ...rest }: ButtonProps) {
   return (
     <button
       {...rest}
