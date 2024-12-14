@@ -8,7 +8,6 @@ import { Company } from '@/lib/api';
 export interface CompanyRowProps {
   company: Company;
 }
-
 export default function CompanyRow({ company }: CompanyRowProps) {
   return (
     <tr className="h-14 text-center text-gray-900 bg-white">
